@@ -1,8 +1,4 @@
 
-
-from email.policy import default
-
-
 try:
     firstNumber = int(input("Enter First Number:"))
     operation =  str(input("Enter Any Operator(*,+,-,/,%):"))
