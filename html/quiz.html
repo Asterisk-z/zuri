@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Template</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            text-align: center;
+            padding: 1em;
+        }
+
+        header {
+            background-color: black;
+            width: auto;
+            height: auto;
+            color: #ddd;
+            font-size: 1.7em;
+            padding: 0.2em;
+        }
+
+        header h5 {
+            font-weight: 100;
+        }
+
+        section {
+            background-color: lightgray;
+            padding: 2em .2em;
+            height: 50vh;
+            border-bottom: 2px solid #000;
+        }
+
+        section h3 {
+            font-size: 3em;
+            font-weight: 100;
+        }
+
+        section .options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1em 0.1em;
+        }
+
+        section .options div {
+            width: 10%;
+            text-align: left;
+            font-size: 1.3em;
+            padding: .1em;
+        }
+
+
+        section .options div span {
+            font-weight: 100;
+        }
+
+        section .buttons {
+            padding-top: 5em;
+        }
+
+        section .buttons a {
+            background: blue;
+            color: #fff;
+            padding: .5em;
+            margin: .2em;
+            font-size: 1.5em;
+            text-decoration: none;
+            margin-top: 5em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h5>Quiz on Important Facts</h5>
+        </header>
+        <section>
+            <h3>Which one of this is a javascript package manager?</h3>
+            <div class="options">
+                <div>
+                    <input type="radio" name="version" id="" />
+                    <span>a : Node.js</span>
+                </div>
+                <div>
+                    <input type="radio" name="version" id="" />
+                    <span>b : Typescript</span>
+                </div>
+                <div>
+                    <input type="radio" name="version" id="" />
+                    <span>c : npm</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="button">Previous Question</a>
+                <a href="#" class="button">Next Question</a>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
