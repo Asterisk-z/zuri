@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+:root  {
+    --red-color : hsl(0, 100%, 74%);
+    --green-color : hsl(154, 59%, 51%);
+    --blue-color :  hsl(248, 32%, 49%);
+    --darkblue-color :  hsl(249, 10%, 26%);
+    --grayishblue-color :   hsl(246, 25%, 77%);
+    --blue-color :  hsl(248, 32%, 49%);
+    --blue-color :  hsl(248, 32%, 49%);
+}
+
+.container {
+    display: flex;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: var(--red-color);
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.container > div:after {
+  content: "";
+  flex: auto;
+}
+
+.intro--section {
+    padding: 17% 5%;
+    color: #fff;
+}
+
+.intro--section .text {
+    padding-left: 40px;
+}
+
+.intro--section .text h3{
+    color: #fff;
+    font-size: 40px;
+}
+
+.form--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--section .content {
+    
+}
+
+.form--section .content .alert {
+    background-color: var(--blue-color);
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px grey;
+}
+
+/* form.form--main {
+    width: 80%;
+} */
