@@ -13,8 +13,6 @@
     --blue-color :  hsl(248, 32%, 49%);
     --darkblue-color :  hsl(249, 10%, 26%);
     --grayishblue-color :   hsl(246, 25%, 77%);
-    --blue-color :  hsl(248, 32%, 49%);
-    --blue-color :  hsl(248, 32%, 49%);
 }
 
 .container {
@@ -56,18 +54,112 @@
     align-items: center;
 }
 
-.form--section .content {
-    
-}
 
 .form--section .content .alert {
     background-color: var(--blue-color);
-    width: fit-content;
-    padding: 5px;
-    margin-bottom: 15px;
+    width: 30em;
+    padding: 10px 5px;
+    margin-bottom: 20px;
     box-shadow: 5px 5px grey;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    /* padding: ; */
+}
+
+.form--section .content .alert span {
+    font-size: 10px;
+}
+
+.form--section .content .alert span .alert-bold {
+    font-weight: bold;
 }
 
 /* form.form--main {
     width: 80%;
 } */
+
+.form--main {
+    background-color: #fff;
+    width: 30em;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.form--main input {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 15px 20px;
+    border: none;
+    outline: 0.5px solid var(--grayishblue-color);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form--main input:focus {
+    outline: 1px solid #000;
+}
+
+.form--main .submit {
+    background-color: var(--green-color);  
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form--main small,
+.form--main small a {
+    font-size: 10px !important;
+    font-weight: lighter !important;
+}
+
+.form--main small a {
+    color: red;
+}
+
+@media (max-width : 960px) {
+
+    .intro--section {
+        padding: 5% 5%;
+    }
+
+    .intro--section .text {
+        padding-left: unset;
+        text-align: center;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        align-self: center;
+    }
+
+.container > div {
+    flex-grow: 1;
+    flex-basis: 0%;
+}
+
+.form--section .content .alert {
+    background-color: var(--blue-color);
+    width: 20em;
+}
+
+
+
+.form--main {
+    background-color: #fff;
+    width: 20em;
+}
+
+
+}
