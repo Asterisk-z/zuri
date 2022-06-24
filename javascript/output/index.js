@@ -7,4 +7,3 @@ console.log("Name : " + name);
 console.log("Height :  " + height);
 console.log("Country : " + country);
 
-window.alert("hello");
