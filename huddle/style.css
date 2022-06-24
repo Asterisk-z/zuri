@@ -144,6 +144,108 @@ p {
     clear: both;
 }
 
+footer {
+    background-color: var(--darkCyan);
+    color: #fff;
+    margin-top: 10em;
+}
+
+footer .footer-top {
+    background-color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 0 15%;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: -17%;
+    box-shadow: .1em .1em .2em .2em #00000064;
+}
+
+footer .footer-top h2{
+    color: #000;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+footer .footer-top a{
+    font-size: 1em;
+    padding: 1.3em 5em;
+    background-color: var(--pink);
+    display: inline-block;
+    border-radius: 3em;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-main {
+    margin-top: 3em;
+}
+
+footer .footer-main > div {
+    float: left;
+    min-width: 20%;
+}
+
+footer .footer-main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.first-foot-section {
+    width: 40%;
+}
+
+.first-foot-section > div {
+    width: 80%;
+    margin-top: 1em;
+    font-family: "Open Sans";
+}
+
+.first-foot-section > div img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em;
+}
+
+.first-foot-section > div p {
+   display: inline-block;
+   width: 80%;
+}
+.second-foot-section, .third-foot-section {
+    text-align: center;
+}
+
+.second-foot-section ul , .third-foot-section ul  {
+    list-style-type: none;
+}
+.second-foot-section ul li, .third-foot-section ul li {
+    text-align: left;
+    margin-top: 1.5em;
+    font-family: "Open Sans";
+}
+
+.fourth-foot-section {
+    padding: 1em 1.5em;
+}
+
+.fourth-foot-section ul {
+    text-align: center;
+    list-style-type: none;
+}
+.fourth-foot-section ul li {
+    float: left;
+    padding: .6em 1em;
+    border-radius: 2em;
+    outline: 1px solid #fff;
+    margin: .4em;
+}
+
+.footer-foot {
+    text-align: right;
+    font-family: "Open Sans";
+    margin: 2em 0em;
+}
+
 
 @media (max-width: 808px) {
     .container {
@@ -175,6 +277,9 @@ p {
         display: flex;
         flex-direction: column-reverse;
     }
+    .special {
+        flex-direction: column;
+    }
 
     .box > div {
         width: 100%;
@@ -182,6 +287,23 @@ p {
         margin-top: 1em;
     }
 
+    footer .footer-top {
+        width: 96%;
+        margin: 0 2%;
+        margin-top: -25%;
+    }
+    footer .footer-main > div {
+        float: left;
+        min-width: 100%;
+    }
+
+    .fourth-foot-section {
+        padding: 1em 25%;
+    }
+
+    .footer-foot {
+        text-align: center;
+    }
 }
 
 
